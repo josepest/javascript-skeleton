@@ -4,16 +4,14 @@
     "browser": true,
     "node": true
   },
-  "plugins": [
-    "eslint-plugin-html",
-    "simple-import-sort",
-    "import"
-  ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended"
-  ],
+  "plugins": ["eslint-plugin-html", "simple-import-sort", "import"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      { "endOfLine": "auto" },
+      { "usePrettierrc": true }
+    ], // Use our .prettierrc file as source
     "no-console": ["error", { "allow": ["error"] }],
     "no-var": "error",
     "object-shorthand": "error",
